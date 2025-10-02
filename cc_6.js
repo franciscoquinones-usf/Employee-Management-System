@@ -5,10 +5,8 @@ class Employee {
         this.name = name;
         this.department = department;
     }
-}
 
-const employee = {
-    describe () {
+    describe() {
         return `${this.name} works in ${this.department}`;
     }
 }
@@ -22,11 +20,11 @@ class Manager extends Employee {
     }
 
     describe() {
-        return `${this.nam} manages the ${this.department} department with a team of ${team.size} people.}`;
+        return `${this.name} manages the ${this.department} department with a team of ${this.teamsize} people.`;
     }
 }
 
-// Step 4 Sample Employees and managers
+// Step 4 Sample Employees and Managers
 
 const emp1 = new Employee("John", "Finance");
 const emp2 = new Employee("Joe", "Marketing");
@@ -41,15 +39,24 @@ class Company {
         this.employees = [];
     }
 
-    addEmployee(employee){
+    addEmployee(employee) {
         this.employees.push(employee);
     }
 
-    listEmployees(){
-        this.employees.foreach(emp => {
+    listEmployees() {
+        this.employees.forEach(emp => {
             console.log(emp.describe());
         });
     }
 }
 
-// Step 6 Company, Employee, and managers
+// Step 6 Making a Company
+
+const myCompany = new Company();
+
+myCompany.addEmployee(emp1);
+myCompany.addEmployee(emp2);
+myCompany.addEmployee(mgr1);
+myCompany.addEmployee(mgr2);
+
+myCompany.listEmployees();
