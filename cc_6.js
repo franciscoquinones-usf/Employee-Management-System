@@ -9,6 +9,20 @@ class Employee {
 
 const employee = {
     describe () {
-        return a`${this.name} works in ${this.department}`;
+        return `${this.name} works in ${this.department}`;
     }
 }
+
+// Step 3
+
+class Manager extends Employee {
+    constructor(name, department, teamsize) {
+        super(name, department);
+        this.teamsize = teamsize;
+    }
+
+    describe() {
+        return `${this.nam} manages the ${this.department} department with a team of ${team.size} people.}`;
+    }
+}
+
