@@ -34,8 +34,22 @@ const emp2 = new Employee("Joe", "Marketing");
 const mgr1 = new Manager("David", "Finance", 4);
 const mgr2 = new Manager("Alex", "Marketing", 3);
 
-// Step 5 
+// Step 5 Company Class and Employees
 
+class Company {
+    constructor() {
+        this.employees = [];
+    }
 
+    addEmployee(employee){
+        this.employees.push(employee);
+    }
 
-// Step 6 
+    listEmployees(){
+        this.employees.foreach(emp => {
+            console.log(emp.describe());
+        });
+    }
+}
+
+// Step 6 Company, Employee, and managers
