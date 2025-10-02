@@ -1,4 +1,4 @@
-// Step 2
+// Step 2 Employee Base Class
 
 class Employee {
     constructor(name, department) { 
@@ -13,7 +13,7 @@ const employee = {
     }
 }
 
-// Step 3
+// Step 3 Manager subclass
 
 class Manager extends Employee {
     constructor(name, department, teamsize) {
@@ -26,3 +26,16 @@ class Manager extends Employee {
     }
 }
 
+// Step 4 Sample Employees and managers
+
+const emp1 = new Employee("John", "Finance");
+const emp2 = new Employee("Joe", "Marketing");
+
+const mgr1 = new Manager("David", "Finance", 4);
+const mgr2 = new Manager("Alex", "Marketing", 3);
+
+// Step 5 
+
+
+
+// Step 6 
